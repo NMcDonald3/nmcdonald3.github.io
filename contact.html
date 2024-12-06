@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Costa - Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+<div id="page-content">
+    <!-- Top bar with the navigation menu -->
+    <nav class="Navigation-Menu">
+        <a href="index.html" class="logo">
+            <img src="images/icon.webp" alt="Logo">
+            <span class="Business-Name">Café Costa</span>
+        </a>
+
+        <div class="Navigation-Menu-Links">
+			<a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="contact-section">
+        <h1>Contact Us</h1>
+        <p>Have feedback or questions? We'd love to hear from you. Please fill out the form below, and we'll get back to you as soon as possible.</p>
+
+        <form class="contact-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Your first name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" placeholder="Your feedback or question" required></textarea>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script src="JS/transition.js"></script>
+</body>
+</html>
