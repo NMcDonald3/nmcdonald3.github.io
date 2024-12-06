@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Costa - Menu</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/menu.css">
+</head>
+<body>
+<div id="page-content">
+	<!-- Top bar with the menu buttons -->
+    <nav class="Navigation-Menu">
+        <a href="index.html" class="logo">
+            <img src="images/icon.webp" alt="Logo">
+            <span class="Business-Name">Café Costa</span>
+        </a>
+
+        <div class="Navigation-Menu-Links">
+			<a href="index.html">Home</a>
+            <a href="Menu.html">Menu</a>
+            <a href="About.html">About Us</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </nav>
+
+	<div class="Items">
+        <h1>Our Menu</h1>
+        <p>These are our expertly-made drinks from our lovely staff, each is brewed with love.</p>
+
+		<div class="menu-item" onclick="toggleItem('espresso')">
+			<h2>Espresso <span class="icon">+</span></h2>	<!-- Makes menu item and gives it a + icon that is used to show it is expandable -->
+			<div id="espresso" class="Item-Descriptions">
+				<p>The Espresso at Café Costa is bold, silky to the feel, made from the finest and freshly ground beans; richness
+					pervades a forceful flavor at each sip. Topped by a smooth creme. This is simply ideal for your
+					preferred specialty drinks or just great on its own as a pick-me-up.</p>
+				<img src="images/espresso.webp" alt="Espresso">
+			</div>
+		</div>
+
+		<div class="menu-item" onclick="toggleItem('cappuccino')">
+			<h2>Cappuccino <span class="icon">+</span></h2>		<!-- Makes menu item and gives it a + icon that is used to show it is expandable -->
+			<div id="cappuccino" class="Item-Descriptions">
+				<p>The cappuccino at Café Costa is a perfectly balanced blend of strongly brewed espresso, steamed milk, and a
+					perfectly frothed top layer to make each sip creamy and balanced. Every cup is prepared with the most profound warmth to
+					lighten up one's day, sprinkled with a touch of sweetness from the top layer of cocoa.</p>
+				<img src="images/cappuccino.png" alt="Cappuccino">
+			</div>
+		</div>
+
+		<div class="menu-item" onclick="toggleItem('Coconut-latte')">
+			<h2>Cinnamon Coconut Latte <span class="icon">+</span></h2>		<!-- Makes menu item and gives it a + icon that is used to show it is expandable -->
+			<div id="Coconut-latte" class="Item-Descriptions">
+				<p>The Cinnamon Coconut Latte at Café Costa is the tropical twist of your classic favorite and combines rich espresso with
+					velvety coconut milk, warmed through with a sprinkle of cinnamon spice. The magical drink is finished with a light sprinkling
+					of cinnamon, offering warmth and refreshment in every sip.</p>
+				<img src="images/latte.webp" alt="Coconut-Latte">
+			</div>
+		</div>
+
+		<div class="menu-item" onclick="toggleItem('matcha')">
+			<h2>Matcha Latte <span class="icon">+</span></h2>		<!-- Makes menu item and gives it a + icon that is used to show it is expandable -->
+			<div id="matcha" class="Item-Descriptions">
+				<p>The Matcha Latte at Café Costa takes you away with vibrant flavors. The perfectly powdery Matcha green tea blends in with
+				creamy and steamed milk, giving the earthy taste it needs. We sprinkle a bit of matcha powder on top and it will energize anyone.</p>
+				<img src="images/matcha.webp" alt="Matcha Latte">
+			</div>
+		</div>
+    </div>
+
+	<script src="JS/menu.js"></script>
+</div>
+	<script src="JS/transition.js"></script>
+</body>
+</html>
