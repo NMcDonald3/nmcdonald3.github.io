@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-	min-width: 100vw;
+	min-width: 100vw;	/* This and line below makes the background image fullscreen */
     min-height: 100vh;
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 .Item-Descriptions {
-    overflow: hidden; /* Makes menu items easy to click, without, it has a weird hover issue */
+    overflow: hidden; /* Makes menu items easy to click, without it, it has a weird hover issue */
     max-height: 0; /* Makes height of box 0, without, the height of the box matches entire description when expanded */
     transition: max-height 0.2s linear, opacity 0.2s linear; /* Gives a nice little animation when expanding or minimizing the box */
 }

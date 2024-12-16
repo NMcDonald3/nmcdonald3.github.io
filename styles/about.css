@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-	min-width: 100vw;
+	min-width: 100vw;	/* This and line below makes the background image fullscreen */
     min-height: 100vh;
 }
 
@@ -98,7 +98,6 @@ body {
 
 .easter-egg:hover {
     color: #FFD700; /* Changes to a gold color when hovered */
-    transform: scale(1.1); /* Slightly enlarges the text */
 }
 
 .easter-egg::after {
@@ -107,14 +106,13 @@ body {
     position: absolute;
     top: 120%; /* Appears just below the text */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Centers the hidden box below the text */
     background-color: #6F4E37;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 16px;
-    white-space: nowrap;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    white-space: nowrap; /* Makes the box appear on one line */
 }
 
 .easter-egg:hover::after {

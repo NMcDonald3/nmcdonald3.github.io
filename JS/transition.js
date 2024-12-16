@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     links.forEach(link => {
         link.addEventListener("click", event => {
 
-            // Add fade-out animation
+            // Adds animation between pages
             const pageContent = document.getElementById("page-content");
         });
     });

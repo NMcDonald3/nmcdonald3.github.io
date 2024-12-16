@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-	min-width: 100vw;
+	min-width: 100vw;	/* This and line below makes the background image fullscreen */
     min-height: 100vh;
 }
 
